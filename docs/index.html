@@ -3,37 +3,114 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pekingman</title>
-    <meta name="description" content="Pekingman landing page">
-    <style>
-      :root { color-scheme: dark; }
-      body {
-        margin: 0;
-        font-family: Inter, Arial, sans-serif;
-        background: #0b0d10;
-        color: #f5f7fa;
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-      }
-      .card {
-        max-width: 760px;
-        padding: 2rem;
-        border: 1px solid #2b3340;
-        border-radius: 20px;
-        background: linear-gradient(135deg, #131821, #1a2230);
-        box-shadow: 0 20px 55px rgba(0,0,0,0.35);
-      }
-      h1 { margin-top: 0; font-size: 2.2rem; }
-      p { line-height: 1.6; color: #c7d0de; }
-      a { color: #7dd3fc; }
-    </style>
+    <meta name="description" content="Pekingman project demo page with system overview and video demonstration.">
+    <title>Pekingman Project Demo</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="card">
-      <h1>Pekingman</h1>
-      <p>This repository now hosts a landing page for the Pekingman demo project.</p>
-      <p><a href="../github-page/">Open the project demo page</a></p>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="Pekingman home">Pekingman</a>
+      <nav aria-label="Page sections">
+        <a href="#demo">Demo</a>
+        <a href="#system">System</a>
+        <a href="#functions">Functions</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Embodied AI system project</p>
+          <h1 id="hero-title">Pekingman</h1>
+          <p class="lead">
+            A modular agent stack exploring memory, perception, task planning, and
+            Unity-based interaction for an artificial life simulation.
+          </p>
+        </div>
+        <a class="scroll-link" href="#demo" aria-label="Jump to demo video">Watch demo</a>
+      </section>
+
+      <section id="demo" class="demo-section" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <p class="eyebrow">Project demo</p>
+          <h2 id="demo-title">Pekingman v1.0.0: A Multimodal AGI-Oriented Agent System</h2>
+          <p class="authors">
+            TingYun Yin, Massachusetts Institute of Technology (MIT)
+            <span>Peixu Cai, University of Southern California (USC)</span>
+            <span>Shahzaib Saqib Warraich, University of Southern California (USC)</span>
+            <span>Osama Fawad, Université Bourgogne Europe (UBE)</span>
+          </p>
+        </div>
+        <video
+          class="demo-video"
+          controls
+          preload="metadata"
+          poster="media/poster.jpg?v=2"
+          src="media/pekingman-demo.mp4?v=2">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-summary">
+          Pekingman v1.0.0 is a multimodal AGI-oriented agent system designed for environmental
+          perception, long-term memory, human-like reasoning, emotional consistency, and real-time
+          behavioral response. Equipped with a high-capacity persistent memory system, it can store,
+          retrieve, and revisit historical events, giving NPCs authentic human-like behavioral logic.
+        </p>
+      </section>
+
+      <section id="system" class="overview-section" aria-labelledby="system-title">
+        <div class="section-heading">
+          <p class="eyebrow">System shape</p>
+          <h2 id="system-title">A shared pipeline for agent state and action</h2>
+        </div>
+        <div class="overview-grid">
+          <article>
+            <h3>Memory</h3>
+            <p>Working and long-term memory files preserve agent context across runs.</p>
+          </article>
+          <article>
+            <h3>Perception</h3>
+            <p>Input folders and collection utilities bring text, video, and environment signals into the system.</p>
+          </article>
+          <article>
+            <h3>Execution</h3>
+            <p>Module orchestration, task selection, and Unity-facing queues connect decisions to visible behavior.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="functions" class="function-section" aria-labelledby="functions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Functionalities</p>
+          <h2 id="functions-title">What the system is built to do</h2>
+        </div>
+        <div class="function-list" role="list">
+          <div role="listitem">
+            <span>Observe</span>
+            <p>Collects text, video, and environment input so the agent can interpret current conditions.</p>
+          </div>
+          <div role="listitem">
+            <span>Remember</span>
+            <p>Maintains working state and long-term context to support continuity across decisions.</p>
+          </div>
+          <div role="listitem">
+            <span>Plan</span>
+            <p>Turns goals and sensed conditions into selected tasks, module activity, and next actions.</p>
+          </div>
+          <div role="listitem">
+            <span>Act</span>
+            <p>Connects planned behavior to simulation-facing controls for visible embodied interaction.</p>
+          </div>
+          <div role="listitem">
+            <span>Monitor</span>
+            <p>Provides a web panel for inspecting module progress, shared state, and system activity.</p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>Pekingman Project</p>
+      <a href="#top">Back to top</a>
+    </footer>
   </body>
 </html>

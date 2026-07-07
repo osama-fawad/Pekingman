@@ -6,8 +6,8 @@ TingYun Yin, Massachusetts Institute of Technology (MIT) &nbsp;&nbsp; Peixu Cai,
 </p>
 
 <p align="center">
-  <a href="github-page/">Project Page</a> |
-  <a href="github-page/media/pekingman-demo.mp4">Demo Video</a>
+  <a href="https://osama-fawad.github.io/Pekingman/">Project Page</a> |
+  <a href="https://osama-fawad.github.io/Pekingman/">Demo Video</a>
 </p>
 
 <p align="center">
